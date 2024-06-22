@@ -5,6 +5,6 @@
 </head>
 <body>
     <h1>Welcome to My Web Page</h1>
-    <p>This is a paragraph of text.</p>
+    <p>React setup is done!!</p>
 </body>
 </html>
