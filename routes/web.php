@@ -20,3 +20,15 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('/card', function () {
+    return view('card');
+});
+
+Route::get('/grid', function () {
+    return view('grid');
+});
+
+Route::get('/flexbox', function () {
+    return view('flexbox');
+});
