@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Flexbox Learning</title>
+        <title>Grid Learning</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -15,39 +15,49 @@
                 padding:0;
             }
             .navbar{
+                
                 display: grid;
-                grid-template-columns: 50px 150px 150px 150px 150px 150px 150px;
+                grid-template-columns: repeat(12,1fr);
                 grid-template-rows: auto;
-                gap: 10px;
                 background-color: teal;
+                padding-top: 1.25rem;
+                
             }
           
             .navItem{
-                text-align:center;
+                text-align:right;
                 border-radius:4px;
-                margin-left:30px;
+                margin-left:2rem;
             }
             .logo{
-                margin-left:40px;
-                height:50px;
-                width:50px;
-                border-radius:25px;
+                
+                margin-left:2.5rem;
+                height:3.125rem;
+                width:3.125rem;
+                border-radius:1.5rem;
                 
             }
             .search{
                 border-radius:1px;
-                width:120px;
-                margin-right:40px;
+                width:7.5rem;
+                height:1.5rem;
+                margin-right:2.5rem;
             }
 
             .container{
-                margin:40px;
+                margin:2.5rem;
             }
             h1{
                 background-color: cyan;
             }
             p{
                 background-color:crimson;
+            }
+            button{
+                text-align: center;
+                margin-left: 2.1875rem;
+                height: 1.875rem;
+                width:3.75rem;
             }
         </style>
     </head>
@@ -58,7 +68,7 @@
             <div class="navItem">PROJECTS</div>
             <div class="navItem">RESEARCHS</div>
             <div class="navItem">ABOUT</div>
-            <button class="navItem">Login</button>
+            <button class="btn">Login</button>
             <input class="search" placeholder="Type to Search">
         </div>
         <div class="container">

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GPACalculatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,7 @@ Route::get('/grid', function () {
 Route::get('/flexbox', function () {
     return view('flexbox');
 });
+
+
+Route::get('/gpa', [GPACalculatorController::class, 'showForm'])->name('gpa.form');
+Route::post('/calculate-gpa', [GPACalculatorController::class, 'calculateGPA'])->name('calculateGPA');
